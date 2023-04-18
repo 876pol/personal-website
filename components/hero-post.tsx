@@ -1,4 +1,3 @@
-import Avatar from './avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
@@ -13,7 +12,7 @@ type Props = {
   slug: string
 }
 
-const HeroPost = ({
+const HeroProject = ({
   title,
   coverImage,
   date,
@@ -30,8 +29,8 @@ const HeroPost = ({
         <div>
           <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
             <Link
-              as={`/posts/${slug}`}
-              href="/posts/[slug]"
+              as={`/projects/${slug}`}
+              href="/projects/[slug]"
               className="hover:underline"
             >
               {title}
@@ -43,11 +42,10 @@ const HeroPost = ({
         </div>
         <div>
           <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          <Avatar name={author.name} picture={author.picture} />
         </div>
       </div>
     </section>
   )
 }
 
-export default HeroPost
+export default HeroProject
