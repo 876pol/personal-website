@@ -2,3 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.fade-in {
+    -webkit-animation: fadeIn ease 1s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation: fadeIn ease 1s;
+    -moz-animation-fill-mode: forwards;
+    -o-animation: fadeIn ease 1s;
+    -o-animation-fill-mode: forwards;
+    -ms-animation: fadeIn ease 1s;
+    -ms-animation-fill-mode: forwards;
+    animation: fadeIn ease 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

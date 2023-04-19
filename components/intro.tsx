@@ -7,12 +7,16 @@ const Intro = () => {
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
         Welcome to my personal website!
         I'm Paul Chen, a Grade 11 student attending Merivale High School in Ottawa, Canada, and an aspiring software developer.
-        I am well-versed in competitive programming and am currently learning web development.
         <br />
         <br />
-        Email: <a className="text-blue-500" href="mailto:chenpaul.pc@gmail.com">chenpaul.pc@gmail.com</a>
+        <b>Programming Languages</b>: Python, JavaScript, C++, Java
         <br />
-        GitHub: <a className="text-blue-500" href="https://github.com/876pol">https://github.com/876pol</a>
+        <b>Frameworks</b>: Django, FastAPI, React, NextJS
+        <br />
+        <br />
+        <b>Email:</b> <a className="text-blue-500" href="mailto:chenpaul.pc@gmail.com">chenpaul.pc@gmail.com</a>
+        <br />
+        <b>GitHub:</b> <a className="text-blue-500" href="https://github.com/876pol">https://github.com/876pol</a>
       </h4>
     </section>
   )
